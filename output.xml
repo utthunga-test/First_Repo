@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220822 17:11:49.159" rpa="false" schemaversion="3">
+<suite id="s1" name="Epl" source="c:\lessons\epl.robot">
+<test id="s1-t1" name=" Exit a loop on condition" line="8">
+<for flavor="IN">
+<var>${i}</var>
+<value>${ROBOTS}</value>
+<iter>
+<var name="${i}">['1 2 3 das']</var>
+<kw name="Log" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220822 17:11:49.221" level="INFO">['1 2 3 das']</msg>
+<status status="PASS" starttime="20220822 17:11:49.221" endtime="20220822 17:11:49.221"/>
+</kw>
+<status status="PASS" starttime="20220822 17:11:49.220" endtime="20220822 17:11:49.221"/>
+</iter>
+<status status="PASS" starttime="20220822 17:11:49.220" endtime="20220822 17:11:49.221"/>
+</for>
+<status status="PASS" starttime="20220822 17:11:49.219" endtime="20220822 17:11:49.222"/>
+</test>
+<test id="s1-t2" name="TEST" line="14">
+<kw name="Log To Console" library="BuiltIn">
+<arg>@{ROBOTS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220822 17:11:49.232" endtime="20220822 17:11:49.233"/>
+</kw>
+<status status="PASS" starttime="20220822 17:11:49.223" endtime="20220822 17:11:49.234"/>
+</test>
+<test id="s1-t3" name="TEST2" line="22">
+<for flavor="IN">
+<var>${intw}</var>
+<value>${h} ${g} Rowdy</value>
+<iter>
+<var name="${intw}">naveen dasa Rowdy</var>
+<kw name="Log" library="BuiltIn">
+<arg>${intw}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220822 17:11:49.238" level="INFO">naveen dasa Rowdy</msg>
+<status status="PASS" starttime="20220822 17:11:49.237" endtime="20220822 17:11:49.238"/>
+</kw>
+<status status="PASS" starttime="20220822 17:11:49.237" endtime="20220822 17:11:49.238"/>
+</iter>
+<status status="PASS" starttime="20220822 17:11:49.236" endtime="20220822 17:11:49.238"/>
+</for>
+<status status="PASS" starttime="20220822 17:11:49.235" endtime="20220822 17:11:49.239"/>
+</test>
+<status status="PASS" starttime="20220822 17:11:49.166" endtime="20220822 17:11:49.247"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Epl">Epl</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
