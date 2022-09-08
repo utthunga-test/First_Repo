@@ -2,7 +2,7 @@
 Documentation  A simple for loop example.
 *** Variables ***
 
-@{ROBOTS}=   1 2 3 das
+@{ROBOTS}=   p
 
 *** Test Cases ***
  Exit a loop on condition
@@ -15,8 +15,8 @@ TEST
     Log to console  @{ROBOTS}
 
 *** Variables ***
-${h}=  naveen
-${g}=  dasa
+${h}=  s
+${g}=  p
 
 *** Test Cases ***
 TEST2
