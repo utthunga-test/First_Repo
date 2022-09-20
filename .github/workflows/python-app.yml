@@ -32,3 +32,18 @@ jobs:
       run: |
         python serialtest.py
         python -m robot serialtest.robot
+tasks:
+  Default:
+    command:
+      - python
+      - -m
+      - robot
+      - --report
+      - NONE
+      - --outputdir
+      - output
+      - --logtitle
+      - Task log
+      - serialtest.robot
+condaConfigFile: conda.yaml
+artifactsDir: output
