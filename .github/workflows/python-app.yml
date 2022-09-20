@@ -37,3 +37,4 @@ jobs:
     - name: Test with python
       run: |
         python serialtest.py
+        python -m robot serialtest.robot
