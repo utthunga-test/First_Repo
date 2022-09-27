@@ -6,7 +6,7 @@ class serialtest(object):
         ser = serial.Serial ('COM3')    #Open named port
         ser.baudrate = 9600           #Set baud rate to 9600
         #Read ten characters from serial port to data
-        ser.write(b'welcome to utthunga@')
+        ser.write(b'Hello world')
         time.sleep(1)
         data1 = ser.read(11)
         return data1
