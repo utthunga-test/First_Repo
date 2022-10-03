@@ -9,7 +9,6 @@ pipeline {
         }
         stage('run test'){
             steps{
-
                 sh'python -m robot serialtest.robot'
                 sh'python -m serialtest' 
             }
