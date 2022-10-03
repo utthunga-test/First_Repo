@@ -8,7 +8,7 @@ pipeline {
         }
         stage('run test'){
             steps{
-                sh'python -m serialtest.py' 
+                sh'python -m serialtest' 
             }
         }
   }
