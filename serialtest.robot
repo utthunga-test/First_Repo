@@ -22,7 +22,7 @@ seriestesting
 
     ${n}=  yay  a
 
-    ${by}=  Encode String To Bytes  hello world  UTF-8
+    ${by}=  Encode String To Bytes  hello  UTF-8
 
     SHOULD BE EQUAL  ${n}  ${by}
 
