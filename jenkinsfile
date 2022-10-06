@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout'){
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/python']], extensions: [], userRemoteConfigs: [[credentialsId: 'bcf85a0e-4f05-48b4-a228-1001879d3366', url: 'https://github.com/sindhug3/Demo-test.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'b7b48747-5465-4833-8753-f2cb77b57683', url: 'https://github.com/shailaja-j/First_Repo.git']]])
                   }
         }
         stage('robot'){
