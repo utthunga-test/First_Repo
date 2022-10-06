@@ -1,21 +1,15 @@
 pipeline {
     agent any
-
-
-
- stages {
+    stages {
         stage('robot'){
-            steps{
-            
-            git branch: 'main', credentialsId: '82f0d861-8180-41a7-8ce7-cdecc9100607', url: 'https://github.com/shailaja-j/First_Repo.git'
-                
+            steps{    
+            git branch: 'main', credentialsId: '82f0d861-8180-41a7-8ce7-cdecc9100607', url: 'https://github.com/shailaja-j/First_Repo.git'    
             }
         }
         
         stage('run test'){
             steps{
-               sh'python -m robot serial.robot'
-               sh'python -m serialtest.py'
+               sh'python -m robot serialtest.py'
             }
         }
   }
