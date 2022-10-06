@@ -1,5 +1,5 @@
 num1 = 15
-num2 = 10
+num2 = 11
  
 # Adding two nos
 sum = num1 + num2
