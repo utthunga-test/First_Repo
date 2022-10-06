@@ -9,7 +9,7 @@ pipeline {
         
         stage('run test'){
             steps{
-               sh'python serialtest'
+               sh'python serialtest.py'
             }
         }
   }
