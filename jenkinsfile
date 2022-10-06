@@ -1,14 +1,21 @@
 pipeline {
     agent any
     stages {
+        stage('checkout'){
+            steps {
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'b7b48747-5465-4833-8753-f2cb77b57683', url: 'https://github.com/shailaja-j/First_Repo.git']]])
+                  }
+        }
         stage('robot'){
             steps{    
             git branch: 'main', credentialsId: 'b7b48747-5465-4833-8753-f2cb77b57683', url: 'https://github.com/shailaja-j/First_Repo.git'
             }
         }
+        
         stage('run test'){
             steps{
-               sh'python -m serialtest.py'
+               sh'python serialtest.py'
+               sh'python -m robot serialtest.robot'
             }
         }
   }
