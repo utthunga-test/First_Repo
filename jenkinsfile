@@ -3,7 +3,7 @@ pipeline {
  stages {
         stage('robot'){
             steps{  
-                bat 'who'
+                bat 'whoami'
             }
         }
         stage('run test'){
