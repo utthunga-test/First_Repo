@@ -8,7 +8,7 @@ class serialtest(object):
         #Read ten characters from serial port to data
         ser.write(b'welcome to star2')
         time.sleep(1)
-        data1 = ser.read(10)
+        data1 = ser.read(15)
         return data1
         #Send back the received data
         ser.close()
