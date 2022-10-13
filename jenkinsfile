@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('checkout'){
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'b7b48747-5465-4833-8753-f2cb77b57683', url: 'https://github.com/shailaja-j/First_Repo.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git']]])
                   }
         }
         stage('robot'){
             steps{    
-            git branch: 'main', credentialsId: 'b7b48747-5465-4833-8753-f2cb77b57683', url: 'https://github.com/shailaja-j/First_Repo.git'
+            git branch: 'main', credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git'
             }
         }
         
