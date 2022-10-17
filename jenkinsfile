@@ -14,9 +14,12 @@ pipeline {
         
         stage('run test'){
             steps{
-                
+                sh'pip install virtualenv'
+                sh'virtualenv venv'
+                sh'venv/Scrpits/activate/'
                  sh'python -m serialtest.py'
                 sh'python -m robot serialtest.robot'
+                
             }
         }
   }
