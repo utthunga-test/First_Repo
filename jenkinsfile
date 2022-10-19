@@ -15,7 +15,7 @@ pipeline {
         stage('run test'){
             steps{
                 
-                 sh'python C:/modb/modbus.py'
+                 sh'python3 modbus.py'
                
                 
             }
