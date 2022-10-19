@@ -8,14 +8,14 @@ pipeline {
         }
         stage('robot'){
             steps{    
-            git branch: 'main', credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git'
+            
             }
         }
         
         stage('run test'){
             steps{
                 
-                 sh'python -m modbus.py'
+                 sh'python C:/modb/modbus.py'
                
                 
             }
