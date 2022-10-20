@@ -17,5 +17,13 @@ Test case for connection
 #         Log List    ${fun}
 #     Lists Should Be Equal    ${fun}    ${status}
 
+Test Cases for POUT
+
+    @{pout}=        Create List    ${17142}    ${58982}
+        Log List    ${pout}
+    @{fun}=        modbus.Func 04    ${30002}    ${2}
+        Log List    ${fun}
+    # Lists Should Be Equal    ${fun}    ${pout}
+
 
 
