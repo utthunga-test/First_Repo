@@ -34,7 +34,7 @@ def func_04(adress, count):
             print(res.registers)
         else:
             print(res)
-        return ((res.resgisters))
+        return ((res.registers))
     else:
         print('cannot connect to the Modbus Server/Slave')
 
