@@ -25,9 +25,9 @@ def connection():
     else:
         return 1
     
-def func_04(adress, count):
+def func_04(address, count):
     if client.connect():
-        res = client.read_input_registers(address=30000,cout=2,unit=1)
+        res = client.read_input_registers(address=address,count=count,unit=1)
 
         if not res.isError():
 
@@ -38,3 +38,4 @@ def func_04(adress, count):
     else:
         print('cannot connect to the Modbus Server/Slave')
 
+func_04(30000,2)
