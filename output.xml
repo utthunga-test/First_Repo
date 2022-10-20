@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221020 15:05:51.009" rpa="false" schemaversion="3">
+<suite id="s1" name="Serialtest" source="c:\project1\First_Repo\serialtest.robot">
+<test id="s1-t1" name="Test case for connection" line="6">
+<kw name="Connection" library="modbus">
+<var>${connection}</var>
+<msg timestamp="20221020 15:05:51.527" level="INFO">${connection} = 1</msg>
+<status status="PASS" starttime="20221020 15:05:51.468" endtime="20221020 15:05:51.535"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${connection}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221020 15:05:51.540" level="INFO">1</msg>
+<status status="PASS" starttime="20221020 15:05:51.537" endtime="20221020 15:05:51.541"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${connection}</arg>
+<arg>${1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221020 15:05:51.543" endtime="20221020 15:05:51.548"/>
+</kw>
+<status status="PASS" starttime="20221020 15:05:51.463" endtime="20221020 15:05:51.552"/>
+</test>
+<status status="PASS" starttime="20221020 15:05:51.070" endtime="20221020 15:05:51.560"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Serialtest">Serialtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
