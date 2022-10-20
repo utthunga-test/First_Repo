@@ -16,7 +16,6 @@ pipeline {
             steps{
                  sh'python modbus.py'
                  sh'python -m robot serialtest.robot'
-                  
             }
         }
   }
