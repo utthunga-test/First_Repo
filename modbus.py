@@ -5,7 +5,7 @@ client = ModbusSerialClient(
 
     method='rtu',
 
-    port='COM7',
+    port='COM2',
 
     baudrate=9600,
 
