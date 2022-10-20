@@ -39,3 +39,4 @@ def func_04(address, count):
         print('cannot connect to the Modbus Server/Slave')
 
 func_04(30000,2)
+
