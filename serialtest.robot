@@ -8,7 +8,7 @@ Library  String
 
 *** Keywords ***
 
-yay
+robust
 
     [Arguments]  ${var1}  
 
@@ -18,14 +18,8 @@ yay
 
 *** Test Cases ***
 
-seriestesting
-
-    ${n}=  yay  a
-
-    ${by}=  Encode String To Bytes  hello  UTF-8
-
-    SHOULD BE EQUAL  ${n}  ${by}
-
-    Log To Console  ${n}
-
-    Log To Console  ${by}
+test
+  ${out}=  robust  a
+  ${v1}=  Encode String To Bytes  UTTHUNGA  UTF-8
+  Log To Console  ${v1}
+  Should Be Equal  ${out}  ${v1}
