@@ -1,4 +1,5 @@
 from pymodbus.client.sync import ModbusSerialClient
+from pymodbus.pdu import ModbusResponse, ExceptionResponse
 
 client = ModbusSerialClient(
 
