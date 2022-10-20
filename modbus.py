@@ -19,11 +19,11 @@ client = ModbusSerialClient(
 
 )
 
-def connection():
-    if not client.connect():
-        return 0
-    else:
-        return 1
+# def connection():
+#     if not client.connect():
+#         return 0
+#     else:
+#         return 1
     
 def func_04(adress, count):
     if client.connect():
