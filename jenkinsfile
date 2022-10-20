@@ -6,7 +6,7 @@ pipeline {
             checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git']]])
                   }
         }
-        stage('robot'){
+        stage('build'){
             steps{    
             git branch: 'main', credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git'
             }
@@ -14,8 +14,10 @@ pipeline {
         
         stage('run test'){
             steps{
-                sh'python -m serialtest.py'
-                sh'python -m robot serialtest.robot'
+              
+                 sh'python -m robot serialtest.robot'
+                 
+                 
             }
         }
   }
