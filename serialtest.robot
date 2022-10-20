@@ -23,7 +23,7 @@ Test Cases for POUT
         Log List    ${pout}
     @{fun}=        modbus.Func 04    ${30002}    ${2}
         Log List    ${fun}
-    # Lists Should Be Equal    ${fun}    ${pout}
+    Lists Should Be Equal    ${fun}    ${pout}
 
 
 
