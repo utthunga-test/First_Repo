@@ -14,8 +14,8 @@ pipeline {
         
         stage('run test'){
             steps{
-                 sh'python modbus.py'
-                 sh'python -m robot serialtest.robot'
+                 sh'python3 modbus.py'
+                 sh'python3 -m robot serialtest.robot'
                  
                  
             }
