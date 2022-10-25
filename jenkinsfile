@@ -14,8 +14,15 @@ pipeline {
         
         stage('run test'){
             steps{
+<<<<<<< HEAD
                  sh'python serialtest.py'
                  sh'python -m robot serialtest.robot'
+=======
+                 sh'python3 serialtest.py'
+                 sh'python3 -m robot serialtest.robot'
+                 
+                 
+>>>>>>> 55a8d56af167cca7a26c4edf6060a8594e68a4cb
             }
         }
   }
