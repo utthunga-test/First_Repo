@@ -36,3 +36,4 @@ PyYAML==6.0
 robotframework==5.0.1
 six==1.16.0
 virtualenv==20.16.2
+pymodbus==3.0.0

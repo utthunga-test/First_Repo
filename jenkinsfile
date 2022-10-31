@@ -14,6 +14,7 @@ pipeline {
         
         stage('run test'){
             steps{
+                sh'pip install requirements.text'
                   sh'python3 serialtest.py'
             }
         }
