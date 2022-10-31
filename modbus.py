@@ -18,7 +18,6 @@ client = ModbusSerialClient(
     bytesize=8
 
 )
-
 def connection():
     if not client.connect():
         return 0
@@ -37,6 +36,5 @@ def func_04(address, count):
         return ((res.registers))
     else:
         print('cannot connect to the Modbus Server/Slave')
-
 func_04(30000,2)
 
