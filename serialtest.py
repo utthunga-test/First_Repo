@@ -14,5 +14,4 @@ class serialtest(object):
         ser.close()
 
 a=serialtest()
-
 a.test()
