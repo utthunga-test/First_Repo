@@ -15,7 +15,6 @@ pipeline {
         stage('run test'){
             steps{
                  sh'pip install requirements.txt'
-                  sh'python3 modbus.py'
             }
         }
   }
